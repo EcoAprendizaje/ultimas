@@ -1,0 +1,118 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f0f0f0; /* Color de fondo claro */
+  background-image: url('baners/portada.jpg'); /* Fondo con imagen */
+  background-size: cover; /* La imagen cubrirá toda la pantalla */
+  background-position: center center; /* Alinea la imagen en el centro */
+  background-repeat: no-repeat; /* No repite la imagen */
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh; /* Asegura que el body cubra todo el alto de la pantalla */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  flex-direction: column; /* Permite que los elementos se apilen verticalmente */
+}
+
+/* Estilo del contenedor principal */
+.contenedor {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos dentro del formulario */
+.form-container h1 {
+  text-align: center;
+  color:  #e30052;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.form-container h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Ajustes para hacer el formulario más bonito */
+.formulario__input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.formulario__submit {
+  background-color:  #e30052;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario__submit:hover {
+  background-color:  #700029;
+}
+
+/* Responsividad: ajuste para pantallas más pequeñas */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contenedor {
+    padding: 15px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .formulario__input {
+    font-size: 14px;
+  }
+
+  .formulario__submit {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+
+/* Botón de regreso */
+.btn-regreso {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color:  #e30052; /* Morado */
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-regreso:hover {
+  background-color: #5a0ca0;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
